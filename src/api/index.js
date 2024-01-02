@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'http://localhost:5000' })
+const API = axios.create({
+  baseURL: 'https://mern-memories-server-wqsz.onrender.com',
+})
 
 //adding this to each req
 API.interceptors.request.use((req) => {
